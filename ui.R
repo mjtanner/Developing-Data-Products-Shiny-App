@@ -13,6 +13,8 @@ shinyUI(
       width = 6
     ),
     mainPanel(
+      p(HTML("<font size = 5>Instructions</font>")),
+      p("Default values are lower bounds of those chosen by Dr. Drake for his original estimation in 1961. Any field may be changed to any valid value. Note that no value may be less than zero and no factional value may be greater than 1. The new estimate is displayed automatically with a change to any factor value."),
       p(HTML('<i>N</i> = R* &times   f<sub>p</sub> &times n<sub>e</sub> &times f<sub>l</sub> &times f<sub>i</sub> &times f<sub>c</sub> &times L')),
       p("The number of intelligent civilizations in our galaxy could be as high as:"),
       print(textOutput('text1')),
